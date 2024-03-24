@@ -2,6 +2,12 @@
 
 class Routes
 {
+    /**
+     * rota
+     *
+     * @param mixed $aParametro 
+     * @return object
+     */
     public static function rota($aParametro)
     {
         $aParGet    = (isset($aParametro['parametros']) ? $aParametro['parametros'] : "Home");
@@ -10,7 +16,7 @@ class Routes
         $acao       = "";
         $id         = null;
         $outrosPar  = [];
-        $camControl = "App" . DIRECTORY_SEPARATOR . "Controller" . DIRECTORY_SEPARATOR;
+        $camControl = ".." . DIRECTORY_SEPARATOR . "App" . DIRECTORY_SEPARATOR . "Controller" . DIRECTORY_SEPARATOR;
 
         //http://velocityphp/
         

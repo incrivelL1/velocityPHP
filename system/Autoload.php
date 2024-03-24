@@ -20,7 +20,7 @@ class Autoload
             $fileName = str_replace('\\', DS, $nameSpace) . DS;
         }
 
-        $fileName = '..' . DS . 'App' . DS . str_replace('_', DS, $className) . 'php';
+        $fileName = '..' . DS . 'App' . DS . str_replace('_', DS, $className) . '.php';
 
         require_once $fileName;
     }
