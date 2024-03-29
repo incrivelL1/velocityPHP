@@ -7,6 +7,11 @@ class Home extends ControllerMain
 {
     public function index()
     {
-        echo "Controller: HOME - Método: INDEX - BASE URL: " . baseUrl();
+        $this->loadView("home");
+    }
+
+    public function contato()
+    {
+        $this->loadView("contato");
     }
 }

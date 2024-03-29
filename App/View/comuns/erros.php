@@ -1,3 +1,9 @@
 <div class="alert alert-danger" role="alert">
-    Página não encontrada...
+    <?php 
+        if (isset($dados['msgError'])) {
+            echo $dados['msgError'];
+        } else {
+            echo "Página não encontrada...";
+        }
+    ?>
 </div>

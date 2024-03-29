@@ -12,7 +12,7 @@ class Erros extends ControllerMain
      */
     public function controllerNotFound()
 	{
-        echo "Controller não localizado.";
+        $this->loadView("comuns/erros", ["msgError" => "Controller não localizado."]);
     }
 
     /**
@@ -22,6 +22,6 @@ class Erros extends ControllerMain
      */
     public function methodNotFound()
     {
-        echo "Método não localizado no controller";
+        $this->loadView("comuns/erros", ["msgError" => "Método não localizado no controller"]);
     }
 }
